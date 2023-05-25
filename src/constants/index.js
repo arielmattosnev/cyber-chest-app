@@ -103,12 +103,6 @@ export const stats = [
 
 export const socialMedia = [
   {
-    id: "social-media-1",
-    icon: github,
-    title: "Repósitorio do projeto",
-    link: "https://github.com/arielmattosnev/cyberchest-app",
-  },
-  {
     id: "social-media-3",
     icon: github,
     title: "Meu github",
