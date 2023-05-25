@@ -9,13 +9,16 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex items-center justify-between py-6">
-      <img src={logo} alt="CyberChest" className="w-[124px] h-[32px]" />
+      <div className="flex items-center justify-center text-white">
+        <img src={logo} alt="CyberChest" className="mr-3" />
+        <p className="text-2xl font-bold">Cyber<span className="text-logoname">Chest</span></p>
+      </div>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map(({ id, title }) => (
           <li
             key={id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 text-white hover:text-slate-400 hover:scale-110 duration-200`}
+            className={"font-poppins font-normal cursor-pointer text-[16px] mr-10 text-white hover:text-logoname hover:scale-110 duration-200"}
           >
             <a href={`#${id}`}>{title}</a>
           </li>
@@ -39,7 +42,7 @@ const Navbar = () => {
             {navLinks.map(({ id, title }) => (
               <li
                 key={id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white hover:text-slate-400 hover:scale-110 duration-100`}
+                className={"font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white hover:text-slate-400 hover:scale-110 duration-100"}
               >
                 <a href={`#${id}`}>{title}</a>
               </li>
